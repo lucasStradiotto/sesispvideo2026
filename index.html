@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10231d">
+  <title>Vídeo Institucional | SESI</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #10231d;
+      color: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-width: 320px;
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 48px 24px;
+      background:
+        linear-gradient(115deg, rgba(8, 25, 20, 0.9), rgba(8, 25, 20, 0.52)),
+        url("seis-escola-e1666809954455.jpg") center / cover fixed;
+    }
+
+    main {
+      width: min(100%, 1040px);
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: #c7e7d7;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.1;
+    }
+
+    .intro {
+      max-width: 600px;
+      margin: 16px auto 32px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      line-height: 1.6;
+    }
+
+    .video-frame {
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 16px;
+      background: #07110e;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+    }
+
+    .video-frame iframe {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 0;
+    }
+
+    .footer {
+      margin: 20px 0 0;
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 0.9rem;
+    }
+
+    .watch-link {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      border-radius: 999px;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 160ms ease, border-color 160ms ease;
+    }
+
+    .watch-link:hover,
+    .watch-link:focus-visible {
+      border-color: #c7e7d7;
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 32px 16px;
+        background-attachment: scroll;
+      }
+
+      .intro {
+        margin-bottom: 24px;
+      }
+
+      .video-frame {
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">SESI</p>
+    <h1>Conheça o SESI</h1>
+    <p class="intro">Assista ao nosso vídeo institucional e conheça um pouco mais sobre o trabalho do SESI.</p>
+
+    <div class="video-frame">
+      <iframe
+        src="https://www.youtube.com/embed/T63_Fsz7iQc"
+        title="Vídeo institucional do SESI"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <p class="footer">Vídeo institucional do SESI</p>
+    <a
+      class="watch-link"
+      href="https://youtu.be/T63_Fsz7iQc"
+      target="_blank"
+      rel="noopener noreferrer">
+      Assistir no YouTube
+    </a>
+  </main>
+</body>
+</html>
